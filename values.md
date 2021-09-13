@@ -2,10 +2,11 @@
 
 We value:
 
-* Empathy
+* Empathy for the persona the code we're making is for
 * Maintainable code
-* Consistency in the codebase
 * Readability
 * Testability in code
-* Automation
 * Frictionless software that enables agility
+* Consistency in the codebase
+* Element of least surprise
+* Automation - if a computer can do it, make it do it
