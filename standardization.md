@@ -2,14 +2,15 @@
 
 The goal of having a somewhat consistent codebase that is standardized is to avoid being completely
 dependent on individuals and make it easier to let the teams have a global ownership.
+
 In a dynamic world were people changes jobs often, the code has to live beyond each individual.
-It helps mitigate risks and by being consistent; anyone can pick up any code.
+It helps mitigate risks and by being consistent, anyone can pick up any code.
 
 ## Language
 
 Technical abstract reusable code should be written in English, domain specific code can be written
 in the language that makes sense for the domain. The thinking behind this is that it can be hard
-and maybe even impossible to properly capture a domains language in another language than the domain
+and maybe even impossible to properly capture a domains language in another language than where the domain
 originates from. This is with the [DDD ubiquitous language](https://www.martinfowler.com/bliki/UbiquitousLanguage.html) in mind.
 
 ## Cohesion

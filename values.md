@@ -85,7 +85,7 @@ time reduce the possibility of human error.
 
 Examples of automation is naturally towards building, automated testing of software on commits
 and all the way to releasing and deploying software into production.
-
+ 
 Within our code there are also opportunities of automation. These are identified as repetitive
 code that we tend to copy/paste around or we're following a recipe that tells us what to do.
 These can be centralized and applied as what is known as [cross-cutting concerns](https://en.wikipedia.org/wiki/Cross-cutting_concern).
