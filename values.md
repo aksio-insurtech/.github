@@ -14,8 +14,8 @@ We value:
 ## Empathy
 
 Understanding who we are building what we're building for is vital to get it right. This is best
-achieved through listening to input and being inquisitive towards the persona. It applies
-at all levels, be it an API or tool being used by another developer all the way to the end-user
+achieved through listening to input, being open to change and being inquisitive towards the persona.
+It applies at all levels, be it an API or tool being used by another developer all the way to the end-user
 using the software through a user interface.
 
 ## Maintainability
