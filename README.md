@@ -6,7 +6,7 @@ If you're contributing to any of the repositories, this would be the starting po
 
 When you do a pull request, the content here serves as the guide for anyone reviewing it.
 Getting to know this before contributing will make it easier to code accepted.
-
+ 
 * [Code of conduct](./CODE_OF_CONDUCT.md)
 * [Our values](./values.md)
 * [Characteristics](./characteristics.md)
