@@ -8,5 +8,4 @@ We value:
 * Readability
 * Testability in code
 * Automation
-* Frictionless software
-
+* Frictionless software that enables agility
