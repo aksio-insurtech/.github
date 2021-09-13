@@ -27,14 +27,36 @@ or .NET 6. The **EventId** must be unique within every class, it should be a seq
 Below is an example:
 
 ```csharp
-    public static class EventLogLoggerMessages
-    {
-        [LoggerMessage(0, LogLevel.Information, "Committing event with '{SequenceNumber}' as sequence number")]
-        internal static partial void Committing(this ILogger logger, EventType eventType, EventSourceId eventSource, uint sequenceNumber, EventLogId eventLog);
+public partial static class EventLogLogMessages
+{
+    [LoggerMessage(0, LogLevel.Information, "Committing event with '{SequenceNumber}' as sequence number")]
+    internal static partial void Committing(this ILogger logger, EventType eventType, EventSourceId eventSource, uint sequenceNumber, EventLogId eventLog);
 
-        [LoggerMessage(1, LogLevel.Error, "Problem committing event to storage")]
-        internal static partial void CommitFailure(this ILogger logger, Exception exception);
+    [LoggerMessage(1, LogLevel.Error, "Problem committing event to storage")]
+    internal static partial void CommitFailure(this ILogger logger, Exception exception);
+}
+```
+
+When you want to use any of the messages you need the `ILogger` in your system that will log:
+
+```csharp
+public class EventLog
+{
+    readonly ILogger<EventLog> _logger;
+
+    public EventLog(ILogger<EventLog> logger)
+    {
+        _logger = logger;
     }
+
+
+    public Task Commit(EventLogId eventLog, EventType type, EventSourceId eventSourceId, uint sequenceNumber)
+    {
+        _eventLog.Committing(eventType, eventSourceId, sequenceNumber, eventLog);
+
+        return Task.CompletedTask;
+    }
+}
 ```
 
 ## Immutable
