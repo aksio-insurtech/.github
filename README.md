@@ -11,3 +11,4 @@ Getting to know this before contributing will make it easier to code accepted.
 * [Characteristics](./characteristics.md)
 * [Standardization](./standardization.md)
   * [C#](csharp.md)
+* [Contributing](./contributing.md)
