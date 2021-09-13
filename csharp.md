@@ -36,3 +36,58 @@ Below is an example:
         internal static partial void CommitFailure(this ILogger logger, Exception exception);
     }
 ```
+
+## Immutable
+
+We favor immutability when we can. The reason behind that is that immutability leads to less side-effects. Think about multi core processors
+and asynchronous code as an example, having multiple threads modify state can be dangerous and lead to unwanted side-effects. It is also
+very hard to reason about what happened. Keeping things immutable leads to designs of creating new instances for each of these with the
+state at the time and enabling composition. With the threading example it also helps us from a performance perspective as we wouldn't
+need to lock and use expensive semaphores to assure anyone else is not modifying state.
+
+Immutability also extends into the design of APIs. APIs should not return mutatable objects. The source owns its invariance and it should
+be the one mutating it. An example of this is returning a `List` or `Dictionary`. These are by design mutable. Instead you should have on
+your public contract `IEnumerable` and `IReadOnlyDictionary`. The implementation could be using mutable enumerables and return these directly
+as they implement `IEnumerable`.
+
+When returning mutatable objects you're at the mercy of the consumer and having to rely on it not altering the state in which it does not
+own. This can lead to unwanted side-effects and very hard to debug and reason about.
+
+## Concepts
+
+To articulate the domain we're working on, we prefer using specific types for everything rather than technical building blocks such as primitives.
+For instance, lets say you have a domain where you have a model that includes person. On the person model you have a property holding the persons social security number.
+In its basic form this is a string.
+
+```csharp
+public class Person
+{
+    public string SocialSecurityNumber { get; set; }
+}
+```
+
+Instead of using `string`, we want this to actually be a specific type of `SocialSecurityNumber`. We call these domain concepts and can be created
+in the following way:
+
+```csharp
+public record SocialSecurityNumber(string value) : ConceptAs<string>(value);
+```
+
+Then our class would change as follows:
+
+```csharp
+public class Person
+{
+    public SocialSecurityNumber SocialSecurityNumber { get; set; }
+}
+```
+
+When I'm using this class I will quickly see the type it is expecting.
+This becomes even more clear when used in APIs, such as a repository:
+
+```csharp
+public interface IPersons
+{
+    Person GetBy(SocialSecurityNumber socialSecurityNumber);
+}
+```
