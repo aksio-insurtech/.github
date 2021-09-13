@@ -20,7 +20,7 @@ of how to do something. Recommend listening to Dan explain the background and hi
 
 Things should play nice with each other. This enables us to put together our software however we see fit.
 It is important to not create couplings and the different components should avoid having dependencies that hinders
-it from being composable.This can be applied to all levels of the software.
+it from being composable. This can be applied to all levels of the software.
 
 ### Unix philosophy
 
