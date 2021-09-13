@@ -21,7 +21,7 @@ using the software through a user interface.
 ## Maintainability
 
 Once code is in production it tends to live on for years. The initial development of the code is
-therefor just a fraction of the time of its lifetime. It is therefor imperative that we create
+therefor often then just a fraction of the time of its lifetime. It is therefor imperative that we create
 code that can live on beyond the initial development. Writing simple code that is easy to reason
 about that can fit inside your head is a good rule of thumb. Maintainability reaches also into
 architectural design patterns and we believe in decoupling our software, breaking it up into
