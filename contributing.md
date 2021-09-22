@@ -1,5 +1,10 @@
 # Contributing
 
+## Defaults
+
+We manage the static code analysis rules in the following [repository](https://github.com/aksio-system/Defaults).
+If you're creating a new project, you should add a reference to this in your project - read the [getting started guide](https://github.com/aksio-system/Defaults#getting-started).
+
 ## Pull Requests
 
 All contributions are considered only through pull requests to the repository you're contributing to.
