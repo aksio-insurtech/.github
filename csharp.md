@@ -67,10 +67,11 @@ very hard to reason about what happened. Keeping things immutable leads to desig
 state at the time and enabling composition. With the threading example it also helps us from a performance perspective as we wouldn't
 need to lock and use expensive semaphores to assure anyone else is not modifying state.
 
-Immutability also extends into the design of APIs. APIs should not return mutable objects. The source owns its invariance and it should
+Immutability also extends into the design of APIs. APIs should not return mutable objects. The source owns its state and reason to change and therefor
 be the one mutating it. An example of this is returning a `List` or `Dictionary`. These are by design mutable. Instead you should have on
 your public contract `IEnumerable` and `IReadOnlyDictionary`. The implementation could be using mutable enumerables and return these directly
-as they implement `IEnumerable`.
+as they implement `IEnumerable`. This implementation detail should not bleed out and by exposing the immutable interface, the consumer should
+then not just assume it can be mutated.
 
 When returning mutable objects you're at the mercy of the consumer and having to rely on it not altering the state in which it does not
 own. This can lead to unwanted side-effects and very hard to debug and reason about.
