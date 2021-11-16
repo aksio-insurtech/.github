@@ -56,3 +56,9 @@ This helps in discoverability for new developers and maintenance over time.
 Dependencies can represent a coupling which then adds friction to the system. Friction presents itself in the form of
 being able to release. If you end up in a situation where you need to coordinate releases there is a chance you have
 an unhealthy dependency.
+
+## 12Factor
+
+As a methodology for how we develop, deploy and run our systems we work with the [12factor](https://12factor.net) methodology.
+This is a formalization of the work and experience done at Heroku. It contains characteristics one wants in a system for it
+to be able to scale, grow and be maintainable for years.
