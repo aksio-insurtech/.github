@@ -23,13 +23,14 @@ consider important. You can read more about them [here](../values.md).
 Our responsibility for running the community is to provide a safe space for everyone. To assure this
 we have put together a [code of conduct](../CODE_OF_CONDUCT.md).
 
+## Architectural characteristics
+
+All that we do follows a set of [characteristics](./characteristics.md) that we use as guiding stars.
+These are characteristics we are building towards and will also be what we look at for contributions.
+
 ## Contributing
 
 We welcome contributions to our journey, we have put to gether a [contributing guide](./contributing.md)
 to help in setting what our expectations are for contributions.
-
-## Architectural characteristics
-
-[Characteristics](./characteristics.md)
 
 </div>
