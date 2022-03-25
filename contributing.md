@@ -1,5 +1,14 @@
 # Contributing
 
+To contribute you should read through our guidelines to make it easier to get pull requests
+approved.
+
+The following specific topics should be are important:
+
+* [Naming](./naming.md)
+* [Standardization](./standardization.md)
+  * [C#](csharp.md)
+
 ## Defaults
 
 We manage the static code analysis rules in the following [repository](https://github.com/aksio-system/Defaults).
