@@ -1,5 +1,5 @@
 <div align="left">
-<img src="https://github.com/aksio-insurtech/.github/blob/79a9effb698ee9e82bdbd43bccf52db111b02343/assets/logo.png" alt="Aksio Logo"  align="right">
+<img src="https://github.com/aksio-insurtech/.github/blob/main/assets/logo.png?raw=true" alt="Aksio Logo"  align="right">
 </div>  
 
 <div align="left">
