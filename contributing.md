@@ -52,9 +52,11 @@ Pull requests will run automated checks for verification, these typically includ
 
 If all of the verifications steps pass, the code will be reviewed.
 
-### Private
+### Private repositories
 
-Pull requests that are merged to **main/master**
+Pull requests that are merged to **main/master** will be entered into the release pipeline.
+All pull requests should also be [squash-merged](https://docs.microsoft.com/en-us/azure/devops/repos/git/merging-with-squash?view=azure-devops) and will be enforced when possible.
+
 Private repositories are versioned automatically when built for release.
 The version number is created from the current date and an auto-incremented revision number for the day.
 
@@ -64,7 +66,7 @@ e.g.
 
 **2022.03.29.1**
 
-### Public
+### Public repositories
 
 A contribution can trigger a versioned release. The versioning is adhering to [semantic versioning version 2](https://semver.org)
 and leveraging our own [release action](https://github.com/aksio-system/release-action) for this.
@@ -77,3 +79,6 @@ That means that the pull request will have to be labeled with what version chang
 | Patch | Bug fixes |
 
 If none of these labels are present, it isn't considered to be a release.
+
+The release action will then produce a `CHANGELOG.md` from the information in the pull request.
+The repositories are configured with the pull request template that will guide you through what to fill in.
