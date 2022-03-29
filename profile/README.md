@@ -16,12 +16,12 @@ Aksio is building an insurance platform for the future with event sourcing at th
 
 At Aksio we have a belief system founded in a set of core values.
 They represent a mindset of how we approach software development and what we
-consider important. You can read more about them [here](../values.md).
+consider important. You can read more about them [here](/main/values.md).
 
 ## Code of Conduct
 
 Our responsibility for running the community is to provide a safe space for everyone. To assure this
-we have put together a [code of conduct](../CODE_OF_CONDUCT.md).
+we have put together a [code of conduct](/CODE_OF_CONDUCT.md).
 
 ## Architectural characteristics
 
