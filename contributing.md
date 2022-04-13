@@ -3,7 +3,7 @@
 To contribute you should read through our guidelines to make it easier to get pull requests
 approved.
 
-The following specific topics should be are important:
+The following specific topics are important:
 
 * [Naming](./naming.md)
 * [Standardization](./standardization.md)
