@@ -9,7 +9,7 @@ The following specific topics are important:
 * [Standardization](./standardization.md)
   * [C#](csharp.md)
 
-## Defaults
+## Defaults - Common static code analysis rules and setup
 
 We manage the static code analysis rules in the following [repository](https://github.com/aksio-system/Defaults).
 If you're creating a new project, you should add a reference to this in your project - read the [getting started guide](https://github.com/aksio-system/Defaults#getting-started).
