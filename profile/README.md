@@ -30,7 +30,7 @@ These are characteristics we are building towards and will also be what we look 
 
 ## Contributing
 
-We welcome contributions to our journey, we have put to gether a [contributing guide](/contributing.md)
+We welcome contributions to our journey, we have put to gether a [contribution guide](/contributing.md)
 to help in setting what our expectations are for contributions.
 
 </div>
